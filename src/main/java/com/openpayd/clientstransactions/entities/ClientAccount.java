@@ -9,9 +9,9 @@ import java.util.Objects;
 @Table(name = "client_account", schema = "client_transactions", catalog = "postgres")
 public class ClientAccount {
     private BigInteger id;
-    private String type;
+    private ADDRESS_TYPE type;
     private Double balance;
-    private String status;
+    private BALANCE_STATUS status;
     private Timestamp dateCreated;
     private Client clientByClientId;
 
@@ -27,11 +27,11 @@ public class ClientAccount {
 
     @Basic
     @Column(name = "type")
-    public String getType() {
+    public ADDRESS_TYPE getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(ADDRESS_TYPE type) {
         this.type = type;
     }
 
@@ -47,11 +47,11 @@ public class ClientAccount {
 
     @Basic
     @Column(name = "status")
-    public String getStatus() {
+    public BALANCE_STATUS getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(BALANCE_STATUS status) {
         this.status = status;
     }
 
