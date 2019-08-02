@@ -1,0 +1,12 @@
+INSERT INTO client_transactions.client (id, name, surname, date_created) VALUES (68, 'Abc224', 'Xyz224', '2019-08-02 02:35:24.740000');
+INSERT INTO client_transactions.client (id, name, surname, date_created) VALUES (71, 'Abc2246', 'Xyz2246', '2019-08-02 02:38:45.301000');
+INSERT INTO client_transactions.client (id, name, surname, date_created) VALUES (74, 'Abc2246', 'Xyz22466', '2019-08-02 02:38:57.786000');
+INSERT INTO client_transactions.client (id, name, surname, date_created) VALUES (77, 'Abc22468', 'Xyz224668', '2019-08-02 02:45:17.384000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (69, 68, '0', 'first line', '2nd line', 'Leeds', 'UK', '2019-08-02 02:35:24.745000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (70, 68, '1', 'first line', '2nd line', 'Stamford', 'UK', '2019-08-02 02:35:24.744000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (72, 71, '1', 'first line', '2nd line', 'Stamford', 'UK', '2019-08-02 02:38:45.306000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (73, 71, '0', 'first line', '2nd line', 'Leeds', 'UK', '2019-08-02 02:38:45.306000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (75, 74, '0', 'first line', '2nd line', 'Leeds', 'UK', '2019-08-02 02:38:57.787000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (76, 74, '1', 'first line', '2nd line', 'Stamford', 'UK', '2019-08-02 02:38:57.787000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (78, 77, '0', 'first line', '2nd line', 'Leeds', 'UK', '2019-08-02 02:45:17.388000');
+INSERT INTO client_transactions.client_address (id, client_id, address_type, line1, line2, city, country, date_created) VALUES (79, 77, '1', 'first line', '2nd line', 'Stamford', 'UK', '2019-08-02 02:45:17.386000');
