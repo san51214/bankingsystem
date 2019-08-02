@@ -12,7 +12,11 @@ create table client
 		constraint client_pkey
 			primary key,
 	name varchar(50) not null,
-	surname varchar(50) not null
+	surname varchar(50) not null,
+	date_created timestamp default CURRENT_TIMESTAMP not null,
+	constraint unique_client_name_surname_
+		unique (name, surname)
+			deferrable initially deferred
 );
 
 alter table client owner to postgres;
@@ -29,7 +33,10 @@ create table client_address
 	line1 text,
 	line2 text,
 	city text not null,
-	country text not null
+	country text not null,
+	date_created timestamp,
+	constraint "Unique_address_address_type_client"
+		unique (address_type, client_id)
 );
 
 alter table client_address owner to postgres;
@@ -69,7 +76,7 @@ create table account_transaction
 			references client_account,
 	amount double precision not null,
 	message text,
-	date_created timestamp not null
+	date_created timestamp default CURRENT_TIMESTAMP not null
 );
 
 alter table account_transaction owner to postgres;
