@@ -6,7 +6,7 @@ create sequence record_entry_sequence;
 
 alter sequence record_entry_sequence owner to postgres;
 
-create table client
+create table clientId
 (
 	id numeric not null
 		constraint client_pkey
@@ -19,7 +19,7 @@ create table client
 			deferrable initially deferred
 );
 
-alter table client owner to postgres;
+alter table clientId owner to postgres;
 
 create table client_address
 (
@@ -28,7 +28,7 @@ create table client_address
 			primary key,
 	client_id numeric not null
 		constraint "client_id_in_address_FK"
-			references client,
+			references clientId,
 	address_type varchar(12) not null,
 	line1 text,
 	line2 text,
@@ -55,7 +55,7 @@ create table client_account
 	date_created timestamp not null,
 	client_id numeric not null
 		constraint client_id_in_account_fk
-			references client
+			references clientId
 );
 
 alter table client_account owner to postgres;
