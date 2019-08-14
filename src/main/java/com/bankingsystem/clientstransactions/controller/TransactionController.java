@@ -1,12 +1,13 @@
-package com.openpayd.clientstransactions.controller;
+package com.bankingsystem.clientstransactions.controller;
 
-import com.openpayd.clientstransactions.entities.AccountTransaction;
-import com.openpayd.clientstransactions.entities.enums.TRANSACTION_STATUS;
-import com.openpayd.clientstransactions.service.TransactionService;
+import com.bankingsystem.clientstransactions.entities.enums.TRANSACTION_STATUS;
+import com.bankingsystem.clientstransactions.service.TransactionService;
+import com.bankingsystem.clientstransactions.entities.AccountTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.math.BigInteger;
 import java.util.List;

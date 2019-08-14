@@ -1,16 +1,15 @@
-package com.openpayd.clientstransactions.controller;
+package com.bankingsystem.clientstransactions.controller;
 
-import com.openpayd.clientstransactions.exceptionhandler.ErrorCode;
-import com.openpayd.clientstransactions.exceptionhandler.OpenPaydException;
-import com.openpayd.clientstransactions.model.Client;
-import com.openpayd.clientstransactions.service.ClientService;
+import com.bankingsystem.clientstransactions.exceptionhandler.BankingSystemException;
+import com.bankingsystem.clientstransactions.model.Client;
+import com.bankingsystem.clientstransactions.service.ClientService;
+import com.bankingsystem.clientstransactions.exceptionhandler.ErrorCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigInteger;
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -34,7 +33,7 @@ public class ClientController {
 
         } catch (Exception ex) {
 
-            throw new OpenPaydException(ex.getMessage(), ErrorCode.ALREADY_EXIST);
+            throw new BankingSystemException(ex.getMessage(), ErrorCode.ALREADY_EXIST);
         }
     }
 
