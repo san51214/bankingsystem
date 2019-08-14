@@ -1,14 +1,12 @@
-package com.openpayd.clientstransactions.exceptionhandler;
+package com.bankingsystem.clientstransactions.exceptionhandler;
 
-import ch.qos.logback.core.util.TimeUtil;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.openpayd.clientstransactions.utils.DateTimeUtil;
+import com.bankingsystem.clientstransactions.utils.DateTimeUtil;
 import lombok.Data;
 
 import org.springframework.http.HttpStatus;
 
 import java.util.Date;
-import java.util.List;
 
 @Data
 public class ApiError {

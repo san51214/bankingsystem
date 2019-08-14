@@ -1,8 +1,7 @@
-package com.openpayd.clientstransactions.model;
+package com.bankingsystem.clientstransactions.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.openpayd.clientstransactions.entities.ADDRESS_TYPE;
-import com.openpayd.clientstransactions.entities.Client;
+import com.bankingsystem.clientstransactions.entities.enums.ADDRESS_TYPE;
 import lombok.Data;
 
 import java.math.BigInteger;

@@ -1,4 +1,4 @@
-package com.openpayd.clientstransactions.exceptionhandler;
+package com.bankingsystem.clientstransactions.exceptionhandler;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.http.HttpStatus;

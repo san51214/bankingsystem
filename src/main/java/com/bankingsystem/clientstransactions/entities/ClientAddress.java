@@ -1,10 +1,10 @@
-package com.openpayd.clientstransactions.entities;
+package com.bankingsystem.clientstransactions.entities;
 
+import com.bankingsystem.clientstransactions.entities.enums.ADDRESS_TYPE;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 import java.util.Objects;
 
 @Entity

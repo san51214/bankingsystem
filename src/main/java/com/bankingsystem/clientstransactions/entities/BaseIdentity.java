@@ -1,14 +1,10 @@
-package com.openpayd.clientstransactions.entities;
+package com.bankingsystem.clientstransactions.entities;
 
-import com.openpayd.clientstransactions.utils.DateTimeUtil;
-import lombok.Data;
+import com.bankingsystem.clientstransactions.utils.DateTimeUtil;
 
 import javax.persistence.*;
 import java.math.BigInteger;
-import java.time.LocalDateTime;
 import java.util.Date;
-
-import static javax.persistence.GenerationType.SEQUENCE;
 
 
 @MappedSuperclass

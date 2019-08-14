@@ -1,11 +1,10 @@
-package com.openpayd.clientstransactions.model;
+package com.bankingsystem.clientstransactions.model;
 
 
 import lombok.Data;
 
 import java.math.BigInteger;
 import java.util.Date;
-import java.util.List;
 import java.util.Set;
 
 @Data

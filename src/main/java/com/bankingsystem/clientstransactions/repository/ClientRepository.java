@@ -1,6 +1,6 @@
-package com.openpayd.clientstransactions.repository;
+package com.bankingsystem.clientstransactions.repository;
 
-import com.openpayd.clientstransactions.entities.Client;
+import com.bankingsystem.clientstransactions.entities.Client;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

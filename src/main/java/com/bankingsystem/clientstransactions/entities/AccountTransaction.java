@@ -1,8 +1,11 @@
-package com.openpayd.clientstransactions.entities;
+package com.bankingsystem.clientstransactions.entities;
+
+import com.bankingsystem.clientstransactions.entities.enums.TRANSACTION_STATUS;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Objects;
-
+@Data
 @Entity
 @Table(name = "account_transaction", schema = "client_transactions", catalog = "postgres")
 public class AccountTransaction extends BaseIdentity{
@@ -14,6 +17,9 @@ public class AccountTransaction extends BaseIdentity{
     @Column(name = "message")
     private String message;
 
+    @Basic
+    @Column(name = "status")
+    private TRANSACTION_STATUS status;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "debit_account_id", referencedColumnName = "id", nullable = false)

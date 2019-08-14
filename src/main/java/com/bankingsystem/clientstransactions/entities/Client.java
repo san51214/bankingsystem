@@ -1,4 +1,4 @@
-package com.openpayd.clientstransactions.entities;
+package com.bankingsystem.clientstransactions.entities;
 
 import lombok.Data;
 
