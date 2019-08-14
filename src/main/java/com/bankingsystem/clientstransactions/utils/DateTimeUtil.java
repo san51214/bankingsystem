@@ -1,4 +1,4 @@
-package com.openpayd.clientstransactions.utils;
+package com.bankingsystem.clientstransactions.utils;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
